@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#359c27">
+        <Spinner
+            android:id="@+id/spiner1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            ></Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/re1">
+        <EditText
+            android:id="@+id/txt_sotien"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint="Số tiền"
+            android:layout_marginLeft="20dp"
+            android:gravity="bottom"
+            android:textSize="30dp"
+            />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/txt_sotien"
+            android:text="đ"
+            android:gravity="bottom"
+            android:textSize="40dp"/>
+        <TextView
+            android:id="@+id/txt_mucchi"
+            android:gravity="bottom"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_sotien"
+            android:background="#fff"
+            android:textColor="#000"
+            android:text="Danh mục"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            />
+        <TextView
+            android:id="@+id/muc_chi"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/txt_mucchi"
+            android:layout_below="@+id/txt_sotien" />
+        <Button
+            android:id="@+id/btn_danhmuc"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text=">"
+            android:textSize="25dp"
+            android:background="#fff"
+            android:layout_toRightOf="@id/muc_chi"
+            android:layout_below="@id/txt_sotien"/>
+        <TextView
+            android:id="@+id/txt_taikhoan"
+            android:layout_width="150dp"
+            android:gravity="bottom"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_mucchi"
+            android:layout_marginTop="2dp"
+            android:textColor="#000"
+            android:background="#fff"
+            android:text="Tài Khoản"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            />
+
+        <TextView
+            android:id="@+id/tai_khoan"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/muc_chi"
+            android:layout_toRightOf="@+id/txt_taikhoan" />
+        <Button
+            android:id="@+id/btn_taikhoan"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text=">"
+            android:textSize="25dp"
+            android:background="#fff"
+            android:layout_toRightOf="@id/tai_khoan"
+            android:layout_below="@id/btn_danhmuc"/>
+        <TextView
+            android:id="@+id/txt_ngay"
+            android:layout_width="150dp"
+            android:gravity="bottom"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_taikhoan"
+            android:layout_marginTop="2dp"
+            android:textColor="#000"
+            android:background="#fff"
+            android:text="Ngày"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            />
+        <TextView
+            android:id="@+id/timepker"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:textSize="15dp"
+            android:gravity="bottom"
+            android:layout_toRightOf="@+id/txt_ngay"
+            android:layout_below="@+id/txt_taikhoan" />
+        <Button
+        android:id="@+id/btn_time"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:text=">"
+            android:background="#fff"
+            android:textSize="25dp"
+        android:layout_toRightOf="@id/timepker"
+        android:layout_below="@id/txt_taikhoan"/>
+
+
+        <Button
+            android:id="@+id/btn_them_anh"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#fff"
+            android:text="Thêm hình ảnh"
+            android:textSize="20dp"
+            android:gravity="bottom"
+            android:layout_below="@+id/timepker"
+            android:layout_centerHorizontal="true"
+
+            />
+        <Button
+        android:id="@+id/btn_ghi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#000000"
+        android:background="#376c2e"
+        android:text="Ghi"
+        android:textSize="20dp"
+        android:layout_below="@+id/btn_them_anh"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    </RelativeLayout>
+</RelativeLayout>
